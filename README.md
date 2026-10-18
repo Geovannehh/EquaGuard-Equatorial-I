@@ -1,0 +1,1 @@
+# Equaguard-Versao-II
