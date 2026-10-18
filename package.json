@@ -1,0 +1,8 @@
+{
+  "name": "equaguard",
+  "version": "1.0.0",
+  "private": true,
+  "description": "EquaGuard com SQLite e autenticação no servidor",
+  "scripts": {"start": "node server.cjs", "test": "node --test tests/server.test.cjs"},
+  "engines": {"node": ">=24.0.0"}
+}

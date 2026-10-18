@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>EquaGuard – Módulo 5: Armadilhas digitais</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Karla:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/modulo5.css">
+</head>
+<body>
+
+<main id="cenaA" class="screen on" style="justify-content:flex-start;padding:18px 16px 0">
+  <p class="mod" style="margin:0 0 4px">Módulo 5 — Situação 1: O programa gratuito</p>
+  <p class="sodica" id="narr1"></p>
+  <div class="vista" id="vista1"><div class="stage" id="stage1">
+    <button class="postit" id="postit" aria-label="Ler o post-it">Demanda</button>
+    <button class="hot" id="tela1" aria-label="Abrir o computador" hidden></button>
+  </div></div>
+  <div class="nota1" id="nota1" hidden><b>Post-it</b>Mandar pro chefe o telefone do fornecedor Uniformax até as 15h.</div>
+  <div class="pc5" id="pc1" hidden>
+    <div class="wall5">
+      <button class="ic5" id="icChrome" type="button" disabled><span class="ib cb"><span class="chrome"></span></span><span>Navegador</span></button>
+    </div>
+    <div class="win5" id="win1" role="dialog" aria-label="Navegador">
+      <div class="br">
+        <div class="brbar"><i></i><i></i><i></i><div class="url" id="url1">https://www.buscador.example</div></div>
+        <div class="pg gg">
+          <div id="ch_busca">
+            <div class="glogo gen" aria-label="Buscador">Buscador</div>
+            <div class="sbox"><input id="q1" type="text" autocomplete="off" placeholder="Nome do fornecedor"><button id="pesq1" type="button">Pesquisar</button></div>
+            <p class="nt2" id="hint1"></p>
+          </div>
+          <div id="ch_load" hidden><div class="spin"></div><p style="color:#5d6b7a">Carregando…</p></div>
+          <div id="ch_res" hidden>
+            <div class="sbox sm"><input value="computador travando" readonly aria-label="Pesquisa"></div>
+            <p class="cnt">Aproximadamente 1.240.000 resultados</p>
+            <div class="ad">
+              <div class="adu" id="adU"><b>Anúncio</b> · pcturbofix-gratis.example</div>
+              <a class="adt" id="adT" href="#" role="link">PC Turbo Fix — Versão gratuita</a>
+              <div class="adp">Seu computador está lento? Corrija todos os erros agora!</div>
+            </div>
+          </div>
+          <div id="ch_site" hidden>
+            <div class="sh"><span class="stl">⚡ PC Turbo Fix</span><span class="snav"><span>Início</span><span>Recursos</span><span>Suporte</span></span></div>
+            <div class="shero">
+              <div class="sht">Deixe seu computador rápido de novo</div>
+              <div class="adp" id="adP">Seu computador está lento? Corrija todos os erros agora! Instalação rápida • Promessa de desempenho máximo.</div>
+              <button class="dl" id="dl1" type="button">⬇ Download grátis</button>
+            </div>
+            <div class="sfeat">
+              <div><b>Limpeza rápida</b><span>Remove arquivos inúteis em poucos cliques.</span></div>
+              <div><b>Mais velocidade</b><span>Acelera a inicialização do computador.</span></div>
+              <div><b>Fácil de usar</b><span>Instale, clique e pronto.</span></div>
+            </div>
+            <div class="sfoot">© PC Turbo Fix · Termos de uso · Privacidade</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="task5"><span>⊞ Iniciar</span><span>14:20</span></div>
+  </div>
+  <div class="m2dock" id="dock1" hidden>
+    <p class="dfb" id="fb1" hidden></p>
+    <div class="dopts" id="op1"></div>
+  </div>
+  <div class="sofim" id="fim1" hidden>
+    <h3>Lição da situação</h3>
+    <p style="margin:0 0 18px"><b>Nem todo programa gratuito é seguro.</b> Nunca instale ferramentas desconhecidas em um equipamento corporativo sem autorização.</p>
+    <button class="btn" id="s1Done">Ir para a Situação 2</button>
+  </div>
+</main>
+
+<main id="cenaB" class="screen" style="justify-content:flex-start;padding:18px 16px 0">
+  <p class="mod" style="margin:0 0 4px">Módulo 5 — Situação 2: A senha entregue à página falsa</p>
+  <p class="sodica" id="narr2"></p>
+  <div class="vista" id="vista2b"><div class="stage" id="stage2b">
+    <button class="postit" id="postit2" aria-label="Ler o post-it" disabled>Login</button>
+    <div class="toast" id="toast2"><b>Novo e-mail</b>Ação necessária: sua conta será bloqueada</div>
+    <button class="hot" id="tela2" aria-label="Abrir o computador"></button>
+  </div></div>
+  <div class="nota1" id="nota2" hidden><b>Dados de simulação</b>Login: jogador@luminar.example<br>Senha: simulacao123</div>
+  <div class="br" id="inbox2" hidden>
+    <div class="brbar" style="background:#143a7a;color:#fff"><b>Correio corporativo</b></div>
+    <div class="pg mail" style="padding:0;min-height:0">
+      <div class="webm">
+        <aside class="wside">
+          <div class="wnew">Novo e-mail</div>
+          <div class="wf on"><span>Caixa de entrada</span><b>1</b></div>
+          <div class="wf"><span>Enviados</span></div>
+          <div class="wf"><span>Rascunhos</span></div>
+          <div class="wf"><span>Spam</span></div>
+          <div class="wf"><span>Lixeira</span></div>
+        </aside>
+        <div class="wmain">
+          <div class="wtool"><span>Caixa de entrada: 1 não lida</span><span class="wsrch">Pesquisar e-mails</span></div>
+          <button type="button" class="irow" id="row2"><span class="ick"></span><span class="ist">☆</span><span class="iav">E</span><span class="itx"><b>Equipe de Acesso</b><span class="isub">Ação necessária: sua conta será bloqueada</span><span class="iprev">Prezado colaborador, detectamos uma atividade incomum na sua conta corporativa…</span></span><small>Agora</small></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="br" id="mail2" hidden>
+    <div class="brbar" style="background:#143a7a;color:#fff"><b>Caixa de entrada</b></div>
+    <div class="pg mail">
+      <h3>Ação necessária: sua conta será bloqueada</h3>
+      <div class="rem"><div class="av">E</div><div><div class="nm">Equipe de Acesso</div><div style="color:var(--m-mu);font-size:.9rem">acesso@empresa-verificacao.example</div></div></div>
+      <div class="corpo">Prezado colaborador,<br><br>Detectamos uma atividade incomum na sua conta corporativa. Para evitar o bloqueio do sistema, acesse sua conta agora e confirme seus dados.<br><br><a class="pulsar" id="lnk2" role="button" tabindex="0">Acessar minha conta</a><br><br><b>Atenção:</b> você tem apenas 30 minutos para evitar o bloqueio.</div>
+    </div>
+  </div>
+  <div class="br" id="br2" hidden>
+    <div class="brbar"><i></i><i></i><i></i><div class="url" id="url2">https://acesso-empresa.verificacao-conta.example/entrar</div></div>
+    <div class="pg site2">
+      <div class="logo2" id="logo2">🏢 Portal da Empresa</div>
+      <p>Acesso à conta corporativa</p>
+      <div class="lg" id="form2">
+        <label for="em2">E-mail</label><input id="em2" type="text" autocomplete="off" spellcheck="false">
+        <label for="pw2">Senha</label><input id="pw2" type="password" autocomplete="off">
+        <p class="nt2 erro2" id="hint2"></p>
+        <button class="go" id="go2" type="button">Entrar</button>
+        <button class="volta" id="volta2" type="button" hidden>Voltar para a mesa</button>
+        <div class="simcard"><b>Dados de simulação (fictícios)</b>Já preenchemos um login de teste para você. Nunca digite sua senha real em um jogo.</div>
+      </div>
+      <div class="err2" id="err2" hidden>Não foi possível concluir o acesso. Tente novamente mais tarde.</div>
+    </div>
+  </div>
+  <div class="info1" id="ofic2" hidden>
+    <b>Compare os endereços</b><br>
+    Endereço oficial da empresa: acesso.empresa.example<br>
+    Endereço da página que você abriu: acesso-empresa.verificacao-conta.example
+  </div>
+  <div class="m2dock" id="dock2" hidden>
+    <p class="dfb" id="fb2" hidden></p>
+    <button class="btn" id="cont2" hidden>Continuar</button>
+    <div class="dopts" id="op2"></div>
+  </div>
+  <div class="sofim" id="fim2" hidden>
+    <h3>Lição da situação</h3>
+    <p style="margin:0 0 18px"><b>Acidentes acontecem, e ninguém precisa ter medo ou vergonha de errar.</b> Se você digitar sua senha em uma página suspeita, mesmo que pareça que nada aconteceu, abra um chamado ou ligue para a Central de Serviços da TI imediatamente. Reportar rápido reduz os danos.</p>
+    <button class="btn" id="s2Done">Concluir módulo</button>
+  </div>
+</main>
+
+<main id="resP" class="screen">
+  <div class="wrap res res5">
+    <p class="mod">Módulo 5 concluído</p>
+    <div class="selo" id="selo5"></div>
+    <h2 class="title" style="font-size:clamp(1.8rem,5vw,2.6rem)">Missão Concluída</h2>
+    <p class="sub" style="margin:10px auto 6px">Dois desafios para demonstrar que você sabe reconhecer armadilhas digitais.</p>
+    <p class="pts" id="r5Pts"></p>
+    <p class="sub" id="r5Txt" style="margin-top:0"></p>
+    <ul class="ck">
+      <li>Downloads desconhecidos podem comprometer equipamentos e dados corporativos.</li>
+      <li>Links suspeitos podem levar a páginas falsas criadas para roubar senhas.</li>
+      <li>Urgência, aparência profissional e promessas de solução não garantem legitimidade.</li>
+      <li>Comunicar rapidamente um incidente ajuda a reduzir os danos.</li>
+    </ul>
+    <p class="final">“Na segurança digital, parar para verificar é melhor do que agir por impulso. Desconfie, confirme e comunique. Sua atitude pode proteger toda a empresa.”</p>
+    <div class="acoes" style="justify-content:center;margin-top:26px"><button class="btn" id="voltaMod">Voltar aos módulos</button> <button class="btn sec" id="r5Again">Jogar o módulo de novo</button></div>
+  </div>
+</main>
+
+<div class="modal" id="confM" role="alertdialog" aria-modal="true" aria-labelledby="cTit">
+  <div class="sheet caiu">
+    <div class="alertic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l10 18H2z"/><path d="M12 10v5"/><path d="M12 18.2v.1"/></svg></div>
+    <h2 id="cTit">Você tem certeza que quer instalar esse arquivo desconhecido?</h2>
+    <p>pcturbofix_setup.exe · origem fora dos canais oficiais da empresa</p>
+    <div class="acoes" style="justify-content:center"><button class="btn" id="confSim" type="button">Sim, instalar</button><button class="btn sec" id="confNao" type="button">Não, voltar</button></div>
+  </div>
+</div>
+<div class="modal" id="fone1">
+  <div class="tk5" role="dialog" aria-label="Contato com a TI">
+    <div class="tkh"><div class="tklogo">TI</div><div><b id="tkT">Portal de Chamados da TI</b><small id="tkS">Canal oficial para falar com a TI · simulação</small></div><button class="xb5" id="x1f" type="button" aria-label="Fechar o portal" style="margin-left:auto">✕</button></div>
+    <div class="tkb" id="msgs1"></div>
+    <div class="tkf" id="wa1"></div>
+  </div>
+</div>
+<div class="modal" id="erroM" role="alertdialog" aria-modal="true" aria-labelledby="eTit">
+  <div class="sheet caiu">
+    <div class="alertic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l10 18H2z"/><path d="M12 10v5"/><path d="M12 18.2v.1"/></svg></div>
+    <h2 id="eTit"></h2><p id="eTxt"></p>
+    <button class="btn" id="eOk">Tentar de novo</button>
+  </div>
+</div>
+
+<script src="js/eg-dados.js"></script>
+<script src="js/modulo5.js"></script>
+</body>
+</html>
