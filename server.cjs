@@ -111,7 +111,7 @@ async function criarServidor(op={}){
 }
 if(require.main===module)criarServidor({resetAdmin:process.argv.includes('--reset-admin')}).then(app=>{
  if(process.argv.includes('--init')){if(app.senhaInicial)console.log(`Usuário: seguranca\nSenha inicial: ${app.senhaInicial}`);else console.log('Banco já inicializado.');app.db.close();return}
- const port=Number(process.env.PORT||3000);app.server.listen(port,'0.0.0.0',()=>{console.log(`EquaGuard: http://0.0.0.0:${port}`);if(app.senhaInicial)console.log(`Acesso inicial — usuário: seguranca | senha: ${app.senhaInicial}\nGuarde esta senha. Ela não será exibida novamente.`)});
+ const port=Number(process.env.PORT||3000);app.server.listen(port,'127.0.0.1',()=>{console.log(`EquaGuard: http://127.0.0.1:${port}`);if(app.senhaInicial)console.log(`Acesso inicial — usuário: seguranca | senha: ${app.senhaInicial}\nGuarde esta senha. Ela não será exibida novamente.`)});
  app.server.on('error',e=>{console.error(e.message);process.exitCode=1;app.db.close()});
  for(const sig of ['SIGINT','SIGTERM'])process.on(sig,()=>app.close().then(()=>process.exit(0)));
 }).catch(e=>{console.error(e.message);process.exitCode=1});
